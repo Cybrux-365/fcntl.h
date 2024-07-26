@@ -3,7 +3,7 @@
 
 void 	Des(int fd)
 {
-    int *p;
+    int		*p;
    
     p = &fd;
     write (*p, "This is a new file\n", 19);
