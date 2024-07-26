@@ -3,14 +3,14 @@
 
 void 	Des(int fd)
 {
-    int		*p;
+	int	*p;
    
-    p = &fd;
-    write (*p, "This is a new file\n", 19);
+    	p = &fd;
+    	write (*p, "This is a new file\n", 19);
 }
 
 int	main(void)
 {
-    Des (open ("new-file.txt", O_WRONLY | O_CREAT));
-    return (0);
+    	Des (open ("new-file.txt", O_WRONLY | O_CREAT));
+	return (0);
 }
